@@ -142,11 +142,11 @@ class Day extends Component {
           backgroundColor: this.theme.calendarBackground
         };
         rightFillerStyle = {
-          backgroundColor: flags.startingDay.color
-        };
-        containerStyle.push({
           // backgroundColor: flags.startingDay.color
           backgroundColor: this.theme.selectedRangeColor
+        };
+        containerStyle.push({
+          backgroundColor: flags.startingDay.color
         });
       } else if (flags.endingDay && !flags.startingDay) {
         rightFillerStyle = {
